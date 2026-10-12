@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
+  <defs>
+    <!-- Bokeh background gradient -->
+    <radialGradient id="terrace-bokeh" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stopColor="#2A1B14" />
+      <stop offset="50%" stopColor="#1E120D" />
+      <stop offset="100%" stopColor="#120A06" />
+    </radialGradient>
+
+    <!-- Warm fairy light bokeh circles -->
+    <radialGradient id="bokeh-orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#FFF4D0" stopOpacity="0.8" />
+      <stop offset="40%" stopColor="#FFB74D" stopOpacity="0.5" />
+      <stop offset="100%" stopColor="#FF9800" stopOpacity="0" />
+    </radialGradient>
+
+    <!-- Vibrant Chaiwallaaa Blue Table surface gradient -->
+    <linearGradient id="blue-tabletop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#0288D1" />
+      <stop offset="30%" stopColor="#0277BD" />
+      <stop offset="70%" stopColor="#01579B" />
+      <stop offset="100%" stopColor="#003c6c" />
+    </linearGradient>
+
+    <!-- Chai tea liquid gradient -->
+    <linearGradient id="chai-amber-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#F59E0B" />
+      <stop offset="35%" stopColor="#D97706" />
+      <stop offset="80%" stopColor="#B45309" />
+      <stop offset="100%" stopColor="#78350F" />
+    </linearGradient>
+
+    <!-- Golden bread toast gradient -->
+    <linearGradient id="toasted-bread" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FDE68A" />
+      <stop offset="40%" stopColor="#F59E0B" />
+      <stop offset="80%" stopColor="#D97706" />
+      <stop offset="100%" stopColor="#92400E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background: Soft Twilight Outdoor Terrace Bokeh -->
+  <rect width="1600" height="1000" fill="url(#terrace-bokeh)" />
+
+  <!-- Out of focus fairy lights bokeh orbs -->
+  <circle cx="280" cy="180" r="45" fill="url(#bokeh-orb)" />
+  <circle cx="450" cy="120" r="60" fill="url(#bokeh-orb)" />
+  <circle cx="750" cy="200" r="35" fill="url(#bokeh-orb)" />
+  <circle cx="980" cy="140" r="50" fill="url(#bokeh-orb)" />
+  <circle cx="1250" cy="160" r="55" fill="url(#bokeh-orb)" />
+  <circle cx="1420" cy="220" r="40" fill="url(#bokeh-orb)" />
+  <circle cx="620" cy="100" r="70" fill="url(#bokeh-orb)" />
+  <circle cx="1120" cy="90" r="65" fill="url(#bokeh-orb)" />
+
+  <!-- Distant silhouette of thatched cabana & terrace chairs -->
+  <path d="M 120 320 L 480 180 L 840 320 Z" fill="#1A110B" opacity="0.4" />
+  <ellipse cx="220" cy="380" rx="90" ry="25" fill="#1A110B" opacity="0.3" />
+  <ellipse cx="1380" cy="360" rx="80" ry="22" fill="#1A110B" opacity="0.3" />
+
+  <!-- ==================== THE BLUE TERRACE TABLE ==================== -->
+  <path d="M 0 420 L 1600 380 L 1600 1000 L 0 1000 Z" fill="url(#blue-tabletop)" />
+  
+  <!-- Subtle wood grain / glossy outdoor table reflection line -->
+  <path d="M 0 460 L 1600 420" stroke="#29B6F6" stroke-width="4" opacity="0.4" />
+  <path d="M 0 540 L 1600 500" stroke="#4FC3F7" stroke-width="2" opacity="0.25" />
+
+  <!-- Table shadow cast by plates and glasses -->
+  <ellipse cx="520" cy="740" rx="280" ry="70" fill="rgba(0, 20, 50, 0.45)" />
+  <ellipse cx="1080" cy="680" rx="220" ry="60" fill="rgba(0, 20, 50, 0.45)" />
+  <ellipse cx="780" cy="850" rx="140" ry="40" fill="rgba(0, 20, 50, 0.45)" />
+
+  <!-- ==================== FOOD ITEM 1: GRILLED CHICKEN PANINI SANDWICH ==================== -->
+  <g id="grilled-sandwich-plate" transform="translate(480, 640)">
+    <!-- White ceramic serving plate -->
+    <ellipse cx="0" cy="40" rx="260" ry="90" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="4" />
+    <ellipse cx="0" cy="42" rx="230" ry="75" fill="#F8FAFC" />
+
+    <!-- Triangle Sandwich Slice 1 (Tilted forward) -->
+    <polygon points="-140,20 -10,-80 130,10 0,60" fill="url(#toasted-bread)" stroke="#B45309" stroke-width="3" />
+    <!-- Grill marks (Dark brown charred press stripes) -->
+    <line x1="-80" y1="-10" x2="-20" y2="40" stroke="#451A03" stroke-width="8" stroke-linecap="round" />
+    <line x1="-30" y1="-45" x2="35" y2="25" stroke="#451A03" stroke-width="8" stroke-linecap="round" />
+    <line x1="20" y1="-65" x2="85" y2="5" stroke="#451A03" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- Melted cheese & mint mayo filling peeking out -->
+    <path d="M -130 25 Q -60 45 10 50 Q 80 40 125 15" stroke="#FBBF24" stroke-width="12" fill="none" stroke-linecap="round" />
+    <path d="M -90 30 Q -40 48 20 45" stroke="#84CC16" stroke-width="7" fill="none" stroke-linecap="round" />
+    <path d="M -50 35 Q 0 45 40 38" stroke="#EF4444" stroke-width="5" fill="none" stroke-linecap="round" />
+
+    <!-- Triangle Sandwich Slice 2 (Stacked behind) -->
+    <polygon points="-80,-40 20,-110 140,-20 60,10" fill="url(#toasted-bread)" stroke="#B45309" stroke-width="2.5" opacity="0.95" />
+    <line x1="-40" y1="-65" x2="10" y2="-20" stroke="#451A03" stroke-width="7" stroke-linecap="round" />
+    <line x1="10" y1="-90" x2="65" y2="-35" stroke="#451A03" stroke-width="7" stroke-linecap="round" />
+  </g>
+
+  <!-- ==================== FOOD ITEM 2: AUTHENTIC CUTTING CHAI GLASSES ==================== -->
+  <!-- Glass 1 (Foreground Right) -->
+  <g id="cutting-chai-1" transform="translate(1080, 580)">
+    <!-- Glass shadow on blue table -->
+    <ellipse cx="0" cy="130" rx="75" ry="25" fill="rgba(0, 15, 40, 0.55)" />
+
+    <!-- Glass Fluted Body -->
+    <polygon points="-48,-60 -36,120 36,120 48,-60" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.7)" stroke-width="3" />
+    
+    <!-- Thick Glass Base -->
+    <ellipse cx="0" cy="120" rx="36" ry="12" fill="rgba(255,255,255,0.6)" stroke="#BAE6FD" stroke-width="2" />
+
+    <!-- Rich Spiced Chai Liquid -->
+    <polygon points="-44,-20 -34,115 34,115 44,-20" fill="url(#chai-amber-grad)" />
+    
+    <!-- Creamy Foam Top Surface -->
+    <ellipse cx="0" cy="-20" rx="44" ry="14" fill="#FDE68A" stroke="#F59E0B" stroke-width="2" />
+    <ellipse cx="-8" cy="-20" rx="30" ry="9" fill="#FEF3C7" />
+    <!-- Foam bubbles -->
+    <circle cx="15" cy="-22" r="3" fill="#D97706" opacity="0.6" />
+    <circle cx="-18" cy="-18" r="2.5" fill="#D97706" opacity="0.6" />
+    <circle cx="2" cy="-16" r="3" fill="#D97706" opacity="0.6" />
+
+    <!-- Glass Fluting Highlights (Vertical faceted cuts) -->
+    <line x1="-30" y1="-45" x2="-22" y2="110" stroke="rgba(255,255,255,0.65)" stroke-width="2.5" />
+    <line x1="-12" y1="-45" x2="-8" y2="112" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+    <line x1="12" y1="-45" x2="8" y2="112" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+    <line x1="30" y1="-45" x2="22" y2="110" stroke="rgba(255,255,255,0.7)" stroke-width="3" />
+
+    <!-- Glass Rim -->
+    <ellipse cx="0" cy="-60" rx="48" ry="16" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="3.5" />
+
+    <!-- Delicate Rising Steam -->
+    <path d="M -10 -75 Q -25 -115 0 -150 Q 20 -180 5 -210" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M 12 -70 Q 28 -110 8 -145 Q -10 -175 6 -205" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- Glass 2 (Second cutting chai beside first) -->
+  <g id="cutting-chai-2" transform="translate(1220, 520)">
+    <ellipse cx="0" cy="115" rx="65" ry="20" fill="rgba(0, 15, 40, 0.45)" />
+    <polygon points="-42,-50 -32,105 32,105 42,-50" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.6)" stroke-width="2.5" />
+    <polygon points="-38,-15 -30,100 30,100 38,-15" fill="url(#chai-amber-grad)" />
+    <ellipse cx="0" cy="-15" rx="38" ry="12" fill="#FDE68A" />
+    <ellipse cx="0" cy="-50" rx="42" ry="14" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="3" />
+    <line x1="26" y1="-35" x2="20" y2="95" stroke="rgba(255,255,255,0.6)" stroke-width="2.5" />
+    <path d="M 0 -60 Q -15 -95 5 -125" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- ==================== CONDIMENT RAMEKINS ON BLUE TABLE ==================== -->
+  <!-- Mint Chutney (Green relish) -->
+  <g transform="translate(740, 750)">
+    <ellipse cx="0" cy="20" rx="42" ry="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <ellipse cx="0" cy="18" rx="36" ry="14" fill="#65A30D" />
+    <circle cx="-5" cy="16" r="3" fill="#84CC16" />
+  </g>
+
+  <!-- Tomato Sauce / Relish -->
+  <g transform="translate(840, 770)">
+    <ellipse cx="0" cy="20" rx="42" ry="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <ellipse cx="0" cy="18" rx="36" ry="14" fill="#DC2626" />
+    <ellipse cx="4" cy="16" rx="8" ry="4" fill="#EF4444" />
+  </g>
+
+  <!-- Golden Crispy Fries in Greaseproof Paper Cup -->
+  <g transform="translate(200, 720)">
+    <polygon points="-40,40 -28,140 28,140 40,40" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2" />
+    <!-- Fries poking up -->
+    <rect x="-24" y="-20" width="10" height="90" rx="3" fill="#FBBF24" stroke="#D97706" stroke-width="1.5" transform="rotate(-12)" />
+    <rect x="-8" y="-35" width="10" height="110" rx="3" fill="#F59E0B" stroke="#B45309" stroke-width="1.5" transform="rotate(-4)" />
+    <rect x="10" y="-25" width="10" height="100" rx="3" fill="#FBBF24" stroke="#D97706" stroke-width="1.5" transform="rotate(10)" />
+    <rect x="-2" y="-10" width="10" height="80" rx="3" fill="#FDE68A" stroke="#D97706" stroke-width="1.5" transform="rotate(2)" />
+  </g>
+
+  <!-- Blue Table Reflections & Lighting Glow -->
+  <rect width="1600" height="1000" fill="url(#bokeh-orb)" opacity="0.08" style="mix-blend-mode: screen;" />
+</svg>

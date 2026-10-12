@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Fraunces', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-handwriting: 'Caveat', cursive;
+  
+  --color-midnight: #100C0A;
+  --color-charcoal: #201510;
+  --color-chai-amber: #D99445;
+  --color-burnt-orange: #E86B32;
+  --color-warm-cream: #FFF0DC;
+  --color-electric-cyan: #27D7FF;
+  --color-neon-violet: #A56BFF;
+  --color-botanical-green: #40E58B;
+  --color-golden-light: #FFC56E;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #100C0A;
+    color: #FFF0DC;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Nightfall Neon atmospheric lighting utilities */
+.glow-cyan-edge {
+  filter: drop-shadow(0 0 16px rgba(39, 215, 255, 0.45));
+}
+
+.glow-violet-edge {
+  filter: drop-shadow(0 0 18px rgba(165, 107, 255, 0.4));
+}
+
+.glow-amber-core {
+  filter: drop-shadow(0 0 20px rgba(217, 148, 69, 0.5));
+}
+
+.text-gradient-amber {
+  background: linear-gradient(135deg, #FFC56E 0%, #D99445 50%, #E86B32 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cream {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFF0DC 80%, #E8D5BE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle camera push-in animation */
+@keyframes camera-push {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+  100% { transform: scale(1); }
+}
+
+.animate-camera-push {
+  animation: camera-push 9s ease-in-out infinite;
+}
+
+/* Refined food shadows */
+.shadow-cinematic-food {
+  filter: drop-shadow(0 20px 30px rgba(16, 12, 10, 0.8)) drop-shadow(0 4px 12px rgba(232, 107, 50, 0.2));
+}
+
+/* =========================================================================
+   CRYSTAL GLASS + LIQUID GLASS VISUAL SYSTEM
+   Features:
+   - Translucent smoky-dark frosted glass with realistic backdrop-filter
+   - Multi-tone luminous refractive borders (amber, cyan, violet, warm white)
+   - Realistic beveled crystal-edge inner highlights and delicate shadows
+   - Slow-moving light streaks & travelling reflections
+   - Shimmering border glow gradients
+   ========================================================================= */
+
+.crystal-glass {
+  background: rgba(32, 21, 16, 0.55);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    0 10px 30px -5px rgba(0, 0, 0, 0.65),
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.crystal-glass-smoky {
+  background: rgba(16, 12, 10, 0.68);
+  backdrop-filter: blur(18px) saturate(135%);
+  -webkit-backdrop-filter: blur(18px) saturate(135%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 12px 36px -4px rgba(0, 0, 0, 0.75),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.crystal-glass-card {
+  background: linear-gradient(135deg, rgba(32, 21, 16, 0.65) 0%, rgba(16, 12, 10, 0.75) 100%);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    0 14px 40px -6px rgba(0, 0, 0, 0.7),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 0 20px 0 rgba(255, 255, 255, 0.02);
+}
+
+/* Crystal Bevelled Top/Left highlight */
+.crystal-bevel {
+  position: relative;
+}
+
+.crystal-bevel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.4) 25%, 
+    rgba(217, 148, 69, 0.6) 50%, 
+    rgba(39, 215, 255, 0.5) 75%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+  border-radius: inherit;
+}
+
+/* Travelling light reflection streak across crystal surface */
+@keyframes crystal-streak {
+  0% {
+    transform: translate(-150%, -150%) rotate(35deg);
+  }
+  100% {
+    transform: translate(150%, 150%) rotate(35deg);
+  }
+}
+
+.crystal-light-streak {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.03) 40%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(39, 215, 255, 0.12) 55%,
+    rgba(255, 255, 255, 0.03) 60%,
+    transparent 100%
+  );
+  animation: crystal-streak 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.crystal-light-streak-fast {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 40%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(217, 148, 69, 0.3) 55%,
+    transparent 100%
+  );
+  animation: crystal-streak 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Luminous animated border shimmer */
+@keyframes border-shimmer {
+  0%, 100% {
+    border-color: rgba(217, 148, 69, 0.35);
+    box-shadow: 0 0 16px rgba(217, 148, 69, 0.2);
+  }
+  33% {
+    border-color: rgba(39, 215, 255, 0.35);
+    box-shadow: 0 0 16px rgba(39, 215, 255, 0.2);
+  }
+  66% {
+    border-color: rgba(165, 107, 255, 0.35);
+    box-shadow: 0 0 16px rgba(165, 107, 255, 0.2);
+  }
+}
+
+.animate-border-shimmer {
+  animation: border-shimmer 8s ease-in-out infinite;
+}
+
+/* Floating crystal particles */
+@keyframes crystal-float {
+  0% {
+    transform: translateY(0) scale(0.9);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-24px) scale(1.15);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(-48px) scale(0.9);
+    opacity: 0.1;
+  }
+}
+
+.animate-crystal-float {
+  animation: crystal-float 8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

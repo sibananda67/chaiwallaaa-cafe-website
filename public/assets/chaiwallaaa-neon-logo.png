@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 310" width="1020" height="310" fill="none">
+  <defs>
+    <!-- Refined Neon Glow Filters -->
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur1" />
+      <feGaussianBlur stdDeviation="10" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-amber" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur1" />
+      <feGaussianBlur stdDeviation="8" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur1" />
+      <feGaussianBlur stdDeviation="8" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Gradients matching original signboard -->
+    <linearGradient id="wordmark-white-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#FFFFFF" />
+      <stop offset="60%" stopColor="#FFFDF5" />
+      <stop offset="100%" stopColor="#FFECC7" />
+    </linearGradient>
+
+    <linearGradient id="triple-a-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#FFB300" />
+      <stop offset="50%" stopColor="#FF6600" />
+      <stop offset="100%" stopColor="#D94510" />
+    </linearGradient>
+
+    <linearGradient id="kettle-glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FFD54F" />
+      <stop offset="100%" stopColor="#FF6D00" />
+    </linearGradient>
+  </defs>
+
+  <!-- ==================== LEFT C EMBLEM ==================== -->
+  <g id="emblem-c" transform="translate(10, 0)">
+    <!-- Outer Electric Blue Neon Arc -->
+    <path
+      d="M 195 48 A 114 114 0 1 0 195 236"
+      stroke="#38A9FF"
+      stroke-width="13"
+      stroke-linecap="round"
+      fill="none"
+      filter="url(#glow-blue)"
+    />
+    <path
+      d="M 195 48 A 114 114 0 1 0 195 236"
+      stroke="#FFFFFF"
+      stroke-width="4.5"
+      stroke-linecap="round"
+      fill="none"
+    />
+
+    <!-- Inner Orange/Amber Neon Tube -->
+    <path
+      d="M 188 68 A 94 94 0 1 0 188 216"
+      stroke="#FF6B00"
+      stroke-width="9"
+      stroke-linecap="round"
+      fill="none"
+      filter="url(#glow-amber)"
+    />
+    <path
+      d="M 188 68 A 94 94 0 1 0 188 216"
+      stroke="#FFD54F"
+      stroke-width="3"
+      stroke-linecap="round"
+      fill="none"
+    />
+
+    <!-- Face Silhouette Profile on inner left of C -->
+    <path
+      d="M 125 86 C 114 104, 118 132, 136 138 C 130 146, 134 156, 130 166 C 122 176, 108 188, 98 193"
+      stroke="#FFA000"
+      stroke-width="5"
+      stroke-linecap="round"
+      fill="none"
+      filter="url(#glow-amber)"
+    />
+
+    <!-- Tilting Brass Kettle pouring tea -->
+    <g id="kettle" transform="translate(150, 62) rotate(-16)">
+      <!-- Body -->
+      <path
+        d="M 16 26 C 16 16, 56 16, 56 26 L 62 56 C 62 66, 10 66, 10 56 Z"
+        fill="url(#kettle-glow-grad)"
+        stroke="#FFF1DE"
+        stroke-width="2"
+      />
+      <!-- Lid & Knob -->
+      <ellipse cx="36" cy="18" rx="19" ry="7" fill="#FF8F00" stroke="#FFF1DE" stroke-width="1.8" />
+      <circle cx="36" cy="11" r="5" fill="#FFE082" filter="url(#glow-amber)" />
+      <!-- Handle -->
+      <path
+        d="M 22 16 C 8 -10, 68 -10, 52 16"
+        stroke="#FF8F00"
+        stroke-width="5.5"
+        fill="none"
+        stroke-linecap="round"
+      />
+      <!-- Spout -->
+      <path
+        d="M 15 44 C -6 47, -16 67, -8 77 C -5 72, 0 62, 11 56"
+        fill="url(#kettle-glow-grad)"
+        stroke="#FFF1DE"
+        stroke-width="2"
+      />
+    </g>
+
+    <!-- Teacup, Saucer, and Steam -->
+    <g id="cup" transform="translate(142, 172)">
+      <!-- Saucer -->
+      <ellipse cx="35" cy="46" rx="27" ry="7" fill="#FF8F00" stroke="#FFF1DE" stroke-width="2.2" />
+      <!-- Cup -->
+      <path
+        d="M 19 20 C 19 42, 51 42, 51 20 Z"
+        fill="url(#kettle-glow-grad)"
+        stroke="#FFF1DE"
+        stroke-width="2.5"
+      />
+      <!-- Handle -->
+      <path
+        d="M 51 24 C 61 25, 61 37, 49 37"
+        stroke="#FFF1DE"
+        stroke-width="2.5"
+        fill="none"
+      />
+      <!-- Curling Steam Wisps -->
+      <path
+        d="M 28 16 C 25 4, 37 0, 31 -14 C 27 -24, 37 -32, 33 -44"
+        stroke="#FFFFFF"
+        stroke-width="3"
+        stroke-linecap="round"
+        fill="none"
+        filter="url(#glow-blue)"
+      />
+      <path
+        d="M 39 16 C 43 6, 37 2, 45 -10 C 49 -20, 43 -28, 47 -38"
+        stroke="#FFFFFF"
+        stroke-width="2.2"
+        stroke-linecap="round"
+        fill="none"
+        filter="url(#glow-blue)"
+      />
+    </g>
+  </g>
+
+  <!-- ==================== MAIN WORDMARK: Chaiwallaaa ==================== -->
+  <g id="wordmark" transform="translate(258, 168)">
+    <!-- Backlighting glow tube -->
+    <text
+      x="0"
+      y="0"
+      font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+      font-weight="900"
+      font-size="110"
+      letter-spacing="-1.5"
+      fill="none"
+      stroke="#FF8F00"
+      stroke-width="12"
+      filter="url(#glow-amber)"
+    >
+      Chaiwall<tspan fill="none" stroke="#FF4500">aaa</tspan>
+    </text>
+
+    <!-- Main Illuminated Creamy White / Gradient Core -->
+    <text
+      x="0"
+      y="0"
+      font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+      font-weight="900"
+      font-size="110"
+      letter-spacing="-1.5"
+      fill="url(#wordmark-white-grad)"
+    >
+      Chaiwall<tspan fill="url(#triple-a-grad)">aaa</tspan>
+    </text>
+
+    <!-- Orange Neon Bulb Dot on the letter 'i' -->
+    <circle cx="230" cy="-90" r="9.5" fill="#FF5500" filter="url(#glow-amber)" />
+    <circle cx="230" cy="-90" r="5.5" fill="#FFE082" />
+  </g>
+
+  <!-- ==================== TOP RIGHT GREEN TEA LEAVES ==================== -->
+  <g id="top-leaves" transform="translate(835, 42)" filter="url(#glow-green)">
+    <!-- Left Leaf -->
+    <path
+      d="M 0 46 C 6 22, 28 6, 48 0 C 42 26, 22 42, 0 46 Z"
+      fill="#3C8B5B"
+      stroke="#10E575"
+      stroke-width="3"
+    />
+    <path d="M 0 46 Q 28 24 48 0" stroke="#004D20" stroke-width="1.8" fill="none" />
+    
+    <!-- Right Leaf -->
+    <path
+      d="M 38 42 C 48 16, 78 0, 98 0 C 94 28, 68 44, 38 42 Z"
+      fill="#3C8B5B"
+      stroke="#10E575"
+      stroke-width="3.5"
+    />
+    <path d="M 38 42 Q 68 22 98 0" stroke="#004D20" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- ==================== BOTTOM GREEN UNDERLINE & LEAF ==================== -->
+  <g id="bottom-bar" transform="translate(260, 218)" filter="url(#glow-green)">
+    <!-- Left Green Tube -->
+    <line x1="10" y1="0" x2="285" y2="0" stroke="#10E575" stroke-width="8" stroke-linecap="round" />
+    <line x1="10" y1="0" x2="285" y2="0" stroke="#E8FFE8" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Center Angled Leaf -->
+    <path
+      d="M 300 -10 C 310 10, 326 26, 350 32 C 345 10, 330 -5, 300 -10 Z"
+      fill="#3C8B5B"
+      stroke="#10E575"
+      stroke-width="2.8"
+    />
+
+    <!-- Right Green Tube -->
+    <line x1="365" y1="0" x2="640" y2="0" stroke="#10E575" stroke-width="8" stroke-linecap="round" />
+    <line x1="365" y1="0" x2="640" y2="0" stroke="#E8FFE8" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- ==================== TAGLINE: Ambience Aroma Artisan ==================== -->
+  <g id="tagline" transform="translate(265, 278)">
+    <text
+      x="0"
+      y="0"
+      font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+      font-weight="800"
+      font-size="42"
+      letter-spacing="2"
+    >
+      <!-- Word 1: Ambience -->
+      <tspan fill="#C95D2B" filter="url(#glow-amber)" font-size="50">A</tspan>
+      <tspan fill="#38A9FF" filter="url(#glow-blue)">mbience</tspan>
+      
+      <!-- Word 2: Aroma -->
+      <tspan dx="40" fill="#C95D2B" filter="url(#glow-amber)" font-size="50">A</tspan>
+      <tspan fill="#38A9FF" filter="url(#glow-blue)">roma</tspan>
+
+      <!-- Word 3: Artisan -->
+      <tspan dx="40" fill="#C95D2B" filter="url(#glow-amber)" font-size="50">A</tspan>
+      <tspan fill="#38A9FF" filter="url(#glow-blue)">rtisan</tspan>
+    </text>
+  </g>
+</svg>

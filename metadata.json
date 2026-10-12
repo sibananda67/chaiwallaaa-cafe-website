@@ -1,0 +1,6 @@
+{
+  "name": "Chaiwallaaa Café",
+  "description": "Chaiwallaaa Café – Ambience. Aroma. Artisan. Ek Cup Chai, Aur Sab Set Ho Jaye. Thodi chai. Thoda sukoon. Aur apno ke saath perfect moments near IIT Bhubaneswar gate, Jatni, Odisha.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

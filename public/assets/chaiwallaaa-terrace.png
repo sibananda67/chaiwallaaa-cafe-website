@@ -1,0 +1,349 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1280" width="1920" height="1280" fill="none">
+  <defs>
+    <!-- Sky Twilight Dusk Sunset Gradient -->
+    <linearGradient id="twilight-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#0B132B" />
+      <stop offset="25%" stopColor="#1C2541" />
+      <stop offset="50%" stopColor="#3A1C40" />
+      <stop offset="70%" stopColor="#6C2D4A" />
+      <stop offset="85%" stopColor="#B34A38" />
+      <stop offset="100%" stopColor="#E06D28" />
+    </linearGradient>
+
+    <!-- Sunset Cloud Gradient -->
+    <linearGradient id="cloud-sunset" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#4A1D36" stopOpacity="0.85" />
+      <stop offset="50%" stopColor="#8A3845" stopOpacity="0.75" />
+      <stop offset="100%" stopColor="#D9632C" stopOpacity="0.65" />
+    </linearGradient>
+
+    <!-- Warm fairy light bulb glow -->
+    <radialGradient id="bulb-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#FFF4D0" />
+      <stop offset="25%" stopColor="#FFC857" stopOpacity="0.9" />
+      <stop offset="60%" stopColor="#FF9F1C" stopOpacity="0.4" />
+      <stop offset="100%" stopColor="#FF8500" stopOpacity="0" />
+    </radialGradient>
+
+    <!-- Gravel ground gradient -->
+    <linearGradient id="gravel-ground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#3A3028" />
+      <stop offset="40%" stopColor="#524538" />
+      <stop offset="75%" stopColor="#6E5D4B" />
+      <stop offset="100%" stopColor="#85725D" />
+    </linearGradient>
+
+    <!-- Thatched straw texture gradient -->
+    <linearGradient id="thatch-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#4A341E" />
+      <stop offset="35%" stopColor="#7A562E" />
+      <stop offset="70%" stopColor="#9C733E" />
+      <stop offset="100%" stopColor="#5E4020" />
+    </linearGradient>
+
+    <!-- Table top reflections -->
+    <radialGradient id="table-orange" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stopColor="#FF7A29" />
+      <stop offset="65%" stopColor="#E64A19" />
+      <stop offset="100%" stopColor="#B23207" />
+    </radialGradient>
+    <radialGradient id="table-yellow" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stopColor="#FFDF00" />
+      <stop offset="70%" stopColor="#F5B700" />
+      <stop offset="100%" stopColor="#D48B00" />
+    </radialGradient>
+
+    <!-- Neon Sign Glow -->
+    <filter id="neon-tower-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ==================== 1. TWILIGHT DUSK SKY & HORIZON ==================== -->
+  <rect width="1920" height="1280" fill="url(#twilight-sky)" />
+
+  <!-- Sunset Crimson & Purple Clouds -->
+  <path d="M 0 380 Q 400 320 900 350 T 1920 310 L 1920 620 L 0 620 Z" fill="url(#cloud-sunset)" />
+  <path d="M 600 240 Q 1100 180 1600 220 T 1920 200 L 1920 400 L 600 400 Z" fill="#2E1B38" opacity="0.6" />
+
+  <!-- Distant Tree Line Silhouettes & Palm Fronds against Sunset -->
+  <path d="M 0 650 Q 300 580 600 620 T 1200 600 T 1920 640 L 1920 750 L 0 750 Z" fill="#140E0A" />
+  <!-- Distant Palms -->
+  <path d="M 1750 450 C 1720 400, 1680 420, 1640 460 C 1670 470, 1710 460, 1750 450 Z" fill="#140E0A" />
+  <path d="M 1750 450 C 1770 390, 1820 410, 1850 440 C 1820 455, 1780 460, 1750 450 Z" fill="#140E0A" />
+  <path d="M 1750 450 C 1760 380, 1740 370, 1720 440 Z" fill="#140E0A" />
+  <line x1="1750" y1="450" x2="1760" y2="650" stroke="#140E0A" stroke-width="8" />
+
+  <!-- ==================== 2. OUTDOOR CRUSHED GRAVEL TERRACE ==================== -->
+  <path d="M 0 680 L 1920 680 L 1920 1280 L 0 1280 Z" fill="url(#gravel-ground)" />
+
+  <!-- River Gravel Texture (Speckled river stones) -->
+  <g opacity="0.45">
+    <ellipse cx="320" cy="850" rx="6" ry="4" fill="#B5A492" />
+    <ellipse cx="480" cy="920" rx="8" ry="5" fill="#42362C" />
+    <ellipse cx="720" cy="1080" rx="9" ry="6" fill="#A89785" />
+    <ellipse cx="980" cy="1150" rx="10" ry="7" fill="#2F251E" />
+    <ellipse cx="1250" cy="980" rx="7" ry="5" fill="#C2B3A3" />
+    <ellipse cx="1450" cy="1120" rx="11" ry="7" fill="#4A3D32" />
+    <ellipse cx="1680" cy="920" rx="8" ry="5" fill="#B0A08E" />
+    <ellipse cx="210" cy="1120" rx="10" ry="6" fill="#3D3025" />
+    <ellipse cx="850" cy="820" rx="5" ry="3" fill="#D4C5B5" />
+    <ellipse cx="1120" cy="840" rx="6" ry="4" fill="#5C4D3E" />
+    <ellipse cx="1520" cy="800" rx="5" ry="3" fill="#9C8C7B" />
+  </g>
+
+  <!-- Hand-painted perimeter wall on the left with palm art & "Chaiwallaaa" mural -->
+  <polygon points="0,620 400,640 400,720 0,720" fill="#E8DEC8" opacity="0.85" />
+  <text x="80" y="685" font-family="'Caveat', cursive, sans-serif" font-size="34" font-weight="bold" fill="#3A2818" transform="rotate(3 80 685)">Chaiwallaaa</text>
+  <path d="M 280 630 Q 320 670 350 710" stroke="#2D472B" stroke-width="4" fill="none" />
+
+  <!-- ==================== 3. ELEVATED TWO-STORY METAL TOWER WITH NEON SIGN ==================== -->
+  <!-- Tower Steel Framework -->
+  <g id="two-story-tower" stroke="#1A2535" stroke-width="5" fill="none">
+    <!-- Legs -->
+    <line x1="1040" y1="360" x2="1020" y2="760" stroke-width="9" />
+    <line x1="1380" y1="360" x2="1400" y2="760" stroke-width="9" />
+    <line x1="1120" y1="360" x2="1110" y2="760" stroke-width="7" />
+    <line x1="1300" y1="360" x2="1310" y2="760" stroke-width="7" />
+
+    <!-- Cross Bracing & Platforms -->
+    <line x1="1030" y1="520" x2="1390" y2="520" stroke-width="8" /> <!-- Mid deck -->
+    <line x1="1020" y1="720" x2="1400" y2="720" stroke-width="8" /> <!-- Ground frame -->
+    <line x1="1040" y1="360" x2="1380" y2="360" stroke-width="10" /> <!-- Top deck -->
+
+    <!-- Diagonal X-trusses -->
+    <line x1="1035" y1="360" x2="1385" y2="520" stroke-width="4" stroke="#25354A" />
+    <line x1="1385" y1="360" x2="1035" y2="520" stroke-width="4" stroke="#25354A" />
+    <line x1="1030" y1="520" x2="1395" y2="720" stroke-width="4" stroke="#25354A" />
+    <line x1="1390" y1="520" x2="1025" y2="720" stroke-width="4" stroke="#25354A" />
+
+    <!-- Staircase -->
+    <line x1="1160" y1="720" x2="1320" y2="520" stroke-width="6" stroke="#4A6572" />
+  </g>
+
+  <!-- The Iconic Chaiwallaaa Illuminated Neon Sign atop the Tower -->
+  <g id="tower-neon-sign" transform="translate(1010, 260)" filter="url(#neon-tower-glow)">
+    <!-- Black Signboard Box with Neon Blue Outline -->
+    <rect x="0" y="0" width="370" height="110" rx="8" fill="#08080C" stroke="#27D7FF" stroke-width="3" />
+
+    <!-- Neon C Emblem -->
+    <path d="M 72 32 A 28 28 0 1 0 72 78" stroke="#27D7FF" stroke-width="4.5" fill="none" stroke-linecap="round" />
+    <path d="M 70 38 A 22 22 0 1 0 70 72" stroke="#FF9F1C" stroke-width="3" fill="none" stroke-linecap="round" />
+    <!-- Teapot & Cup Inside C -->
+    <circle cx="68" cy="55" r="9" fill="#FFB703" />
+
+    <!-- "Chaiwallaaa" Wordmark -->
+    <text x="96" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="34" letter-spacing="-0.5" fill="#FFFDF5">
+      Chaiwall<tspan fill="#FF6B00">aaa</tspan>
+    </text>
+
+    <!-- Top green leaves above wordmark -->
+    <path d="M 292 28 C 295 18, 305 10, 316 8 C 314 20, 304 26, 292 28 Z" fill="#40E58B" />
+    <path d="M 312 26 C 318 16, 332 10, 342 10 C 340 22, 328 28, 312 26 Z" fill="#40E58B" />
+
+    <!-- Underline bar & center leaf -->
+    <line x1="96" y1="72" x2="210" y2="72" stroke="#40E58B" stroke-width="3" stroke-linecap="round" />
+    <path d="M 215 76 C 220 84, 226 88, 235 90 C 233 80, 226 74, 215 76 Z" fill="#40E58B" />
+    <line x1="240" y1="72" x2="335" y2="72" stroke="#40E58B" stroke-width="3" stroke-linecap="round" />
+
+    <!-- "Ambience Aroma Artisan" Tagline -->
+    <text x="98" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="13" letter-spacing="1">
+      <tspan fill="#FF6B00">A</tspan><tspan fill="#27D7FF">mbience </tspan>
+      <tspan fill="#FF6B00">A</tspan><tspan fill="#27D7FF">roma </tspan>
+      <tspan fill="#FF6B00">A</tspan><tspan fill="#27D7FF">rtisan</tspan>
+    </text>
+  </g>
+
+  <!-- ==================== 4. OVERHEAD STEEL BEAMS & HIMALAYAN PRAYER FLAGS ==================== -->
+  <!-- Blue Steel Overhead Support Beams -->
+  <line x1="0" y1="180" x2="1920" y2="290" stroke="#1D4E89" stroke-width="14" />
+  <line x1="0" y1="230" x2="1920" y2="340" stroke="#1D4E89" stroke-width="10" opacity="0.8" />
+
+  <!-- Colorful Himalayan Tibetan Prayer Flags (Blue, White, Red, Green, Yellow) -->
+  <g id="prayer-flags">
+    <!-- Blue Flag -->
+    <polygon points="120,190 280,200 280,310 120,300" fill="#1E56A0" opacity="0.92" />
+    <line x1="135" y1="210" x2="265" y2="218" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4" />
+    <line x1="135" y1="230" x2="265" y2="238" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4" />
+    <line x1="135" y1="250" x2="265" y2="258" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4" />
+
+    <!-- Yellow Flag -->
+    <polygon points="300,202 460,212 460,322 300,312" fill="#EFA929" opacity="0.92" />
+    <line x1="315" y1="222" x2="445" y2="230" stroke="#3A2810" stroke-width="1.5" opacity="0.35" />
+    <line x1="315" y1="242" x2="445" y2="250" stroke="#3A2810" stroke-width="1.5" opacity="0.35" />
+
+    <!-- Red Flag -->
+    <polygon points="480,214 640,224 640,334 480,324" fill="#C32B27" opacity="0.92" />
+    <line x1="495" y1="234" x2="625" y2="242" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4" />
+    <line x1="495" y1="254" x2="625" y2="262" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4" />
+
+    <!-- Green Flag -->
+    <polygon points="660,226 820,236 820,346 660,336" fill="#2D7F36" opacity="0.92" />
+    <line x1="675" y1="246" x2="805" y2="254" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4" />
+
+    <!-- White Flag -->
+    <polygon points="840,238 1000,248 1000,358 840,348" fill="#EDEAE0" opacity="0.95" />
+    <line x1="855" y1="258" x2="985" y2="266" stroke="#222222" stroke-width="1.5" opacity="0.3" />
+    <line x1="855" y1="278" x2="985" y2="286" stroke="#222222" stroke-width="1.5" opacity="0.3" />
+
+    <!-- Second Flag Series on Right -->
+    <polygon points="1440,265 1580,273 1580,373 1440,365" fill="#1E56A0" opacity="0.92" />
+    <polygon points="1600,275 1740,283 1740,383 1600,375" fill="#EFA929" opacity="0.92" />
+    <polygon points="1760,285 1900,293 1900,393 1760,385" fill="#C32B27" opacity="0.92" />
+  </g>
+
+  <!-- ==================== 5. TRADITIONAL THATCHED UMBRELLA CABANAS ==================== -->
+  <!-- Left Large Thatched Cabana Parasol -->
+  <g id="thatched-cabana-left">
+    <!-- Wooden Support Pole -->
+    <rect x="235" y="450" width="16" height="380" fill="#3D2916" stroke="#23170B" stroke-width="2" />
+
+    <!-- Cone Thatch Roof (Outer layered straw overhangs) -->
+    <path d="M 240 160 L 20 480 C 60 510, 160 530, 240 530 C 320 530, 420 510, 460 480 Z" fill="url(#thatch-grad)" />
+
+    <!-- Distinctive jagged palm thatch straw fringe lines -->
+    <path d="M 15 480 Q 80 520 150 510 T 240 540 T 330 510 T 465 480" stroke="#DDA15E" stroke-width="8" stroke-dasharray="14,10" fill="none" />
+    <path d="M 40 460 Q 120 490 240 510 Q 360 490 440 460" stroke="#7A562E" stroke-width="12" stroke-dasharray="20,12" fill="none" />
+    <path d="M 80 380 Q 160 410 240 430 Q 320 410 400 380" stroke="#9C733E" stroke-width="14" stroke-dasharray="24,14" fill="none" />
+
+    <!-- Warm Fairy Lights Strung Under Thatched Umbrella Eaves -->
+    <path d="M 50 495 Q 140 540 240 545 Q 340 540 430 495" stroke="#FFEAA7" stroke-width="2" fill="none" />
+    <!-- Bulbs -->
+    <circle cx="90" cy="515" r="16" fill="url(#bulb-glow)" />
+    <circle cx="160" cy="535" r="18" fill="url(#bulb-glow)" />
+    <circle cx="240" cy="545" r="20" fill="url(#bulb-glow)" />
+    <circle cx="320" cy="535" r="18" fill="url(#bulb-glow)" />
+    <circle cx="390" cy="515" r="16" fill="url(#bulb-glow)" />
+  </g>
+
+  <!-- Middle Thatched Cabana Parasol -->
+  <g id="thatched-cabana-mid">
+    <rect x="670" y="500" width="14" height="280" fill="#3D2916" />
+    <path d="M 675 320 L 490 540 C 530 560, 600 575, 675 575 C 750 575, 820 560, 860 540 Z" fill="url(#thatch-grad)" />
+    <path d="M 485 540 Q 580 570 675 575 Q 770 570 865 540" stroke="#DDA15E" stroke-width="7" stroke-dasharray="12,8" fill="none" />
+    <!-- Fairy lights -->
+    <circle cx="540" cy="550" r="14" fill="url(#bulb-glow)" />
+    <circle cx="610" cy="565" r="15" fill="url(#bulb-glow)" />
+    <circle cx="675" cy="575" r="16" fill="url(#bulb-glow)" />
+    <circle cx="740" cy="565" r="15" fill="url(#bulb-glow)" />
+    <circle cx="810" cy="550" r="14" fill="url(#bulb-glow)" />
+  </g>
+
+  <!-- ==================== 6. HANGING EDISON FESTOON STRING LIGHTS ACROSS SKY ==================== -->
+  <g id="festoon-lights">
+    <!-- Catenary Hanging Wires -->
+    <path d="M 0 320 Q 300 480 600 450 T 1200 430 T 1920 400" stroke="#120A06" stroke-width="3" fill="none" />
+    <path d="M 200 240 Q 600 420 1000 380 T 1800 360" stroke="#120A06" stroke-width="2.5" fill="none" />
+
+    <!-- Hanging Edison Bulb drops with soft golden aura -->
+    <g transform="translate(180, 420)"><line x1="0" y1="0" x2="0" y2="35" stroke="#120A06" stroke-width="2" /><circle cx="0" cy="42" r="24" fill="url(#bulb-glow)" /></g>
+    <g transform="translate(360, 470)"><line x1="0" y1="0" x2="0" y2="40" stroke="#120A06" stroke-width="2" /><circle cx="0" cy="48" r="26" fill="url(#bulb-glow)" /></g>
+    <g transform="translate(540, 455)"><line x1="0" y1="0" x2="0" y2="30" stroke="#120A06" stroke-width="2" /><circle cx="0" cy="38" r="25" fill="url(#bulb-glow)" /></g>
+    <g transform="translate(730, 435)"><line x1="0" y1="0" x2="0" y2="35" stroke="#120A06" stroke-width="2" /><circle cx="0" cy="42" r="26" fill="url(#bulb-glow)" /></g>
+    <g transform="translate(910, 440)"><line x1="0" y1="0" x2="0" y2="40" stroke="#120A06" stroke-width="2" /><circle cx="0" cy="48" r="28" fill="url(#bulb-glow)" /></g>
+    <g transform="translate(1420, 410)"><line x1="0" y1="0" x2="0" y2="35" stroke="#120A06" stroke-width="2" /><circle cx="0" cy="42" r="24" fill="url(#bulb-glow)" /></g>
+    <g transform="translate(1620, 390)"><line x1="0" y1="0" x2="0" y2="30" stroke="#120A06" stroke-width="2" /><circle cx="0" cy="38" r="24" fill="url(#bulb-glow)" /></g>
+    <g transform="translate(1820, 380)"><line x1="0" y1="0" x2="0" y2="30" stroke="#120A06" stroke-width="2" /><circle cx="0" cy="38" r="22" fill="url(#bulb-glow)" /></g>
+  </g>
+
+  <!-- ==================== 7. COLOURFUL SEATING (ORANGE & YELLOW TABLES, CHAIRS) ==================== -->
+  <!-- Table Group 1 (Foreground Center: Iconic Glossy Orange Table) -->
+  <g id="foreground-orange-table" transform="translate(480, 840)">
+    <!-- Table shadow -->
+    <ellipse cx="0" cy="180" rx="280" ry="45" fill="rgba(24, 18, 14, 0.65)" />
+
+    <!-- Dark sturdy central table pedestal & base -->
+    <path d="M -30 70 L -45 180 L 45 180 L 30 70 Z" fill="#18120E" />
+
+    <!-- Round Glossy Orange Tabletop -->
+    <ellipse cx="0" cy="70" rx="320" ry="95" fill="url(#table-orange)" stroke="#FFA040" stroke-width="4" />
+    <!-- Table rim edge thickness -->
+    <ellipse cx="0" cy="80" rx="318" ry="85" fill="none" stroke="#D84315" stroke-width="6" opacity="0.6" />
+
+    <!-- Table Centerpiece: Potted Plant & Glass Candle Lantern -->
+    <!-- Wooden box napkin holder -->
+    <rect x="-80" y="32" width="60" height="34" rx="4" fill="#5D4037" stroke="#3E2723" stroke-width="2" />
+    <rect x="-70" y="24" width="40" height="12" rx="2" fill="#FFFDF5" />
+
+    <!-- Potted green succulent -->
+    <rect x="-10" y="38" width="36" height="28" rx="4" fill="#8D6E63" />
+    <path d="M -15 36 Q 8 8 30 36 Z" fill="#2E7D32" />
+    <path d="M 0 38 Q 8 2 16 38 Z" fill="#43A047" />
+
+    <!-- Glass Candle Lantern (warm glowing flame) -->
+    <rect x="35" y="30" width="28" height="38" rx="6" fill="rgba(255,255,255,0.4)" stroke="#3E2723" stroke-width="2" />
+    <ellipse cx="49" cy="50" rx="18" ry="24" fill="url(#bulb-glow)" />
+    <path d="M 49 42 Q 52 48 49 52 Q 46 48 49 42 Z" fill="#FFEAA7" />
+  </g>
+
+  <!-- Chairs around Foreground Orange Table -->
+  <!-- Left Yellow Perforated Chair -->
+  <g id="chair-left-yellow" transform="translate(180, 920)">
+    <ellipse cx="0" cy="180" rx="140" ry="35" fill="rgba(20, 15, 10, 0.6)" />
+    <!-- Legs -->
+    <line x1="-80" y1="120" x2="-95" y2="240" stroke="#120A06" stroke-width="12" stroke-linecap="round" />
+    <line x1="80" y1="120" x2="95" y2="240" stroke="#120A06" stroke-width="12" stroke-linecap="round" />
+    <!-- Curved backrest with modern perforations -->
+    <path d="M -90 -80 C -110 50, -80 120, -50 140 L 50 140 C 80 120, 110 50, 90 -80 C 60 -100, -60 -100, -90 -80 Z" fill="#FFC72C" stroke="#E5A910" stroke-width="4" />
+    <!-- Perforation dots pattern -->
+    <g fill="#B8860B" opacity="0.45">
+      <circle cx="-40" cy="-30" r="5" /><circle cx="0" cy="-30" r="5" /><circle cx="40" cy="-30" r="5" />
+      <circle cx="-50" cy="0" r="5" /><circle cx="-20" cy="0" r="5" /><circle cx="20" cy="0" r="5" /><circle cx="50" cy="0" r="5" />
+      <circle cx="-40" cy="30" r="5" /><circle cx="0" cy="30" r="5" /><circle cx="40" cy="30" r="5" />
+    </g>
+    <!-- Seat -->
+    <ellipse cx="0" cy="115" rx="80" ry="28" fill="#FFB800" stroke="#E5A910" stroke-width="3" />
+  </g>
+
+  <!-- Right Sunny Yellow Chair (Facing left) -->
+  <g id="chair-right-yellow" transform="translate(860, 960)">
+    <ellipse cx="0" cy="180" rx="150" ry="38" fill="rgba(20, 15, 10, 0.6)" />
+    <line x1="-70" y1="120" x2="-80" y2="250" stroke="#120A06" stroke-width="12" stroke-linecap="round" />
+    <line x1="70" y1="120" x2="80" y2="250" stroke="#120A06" stroke-width="12" stroke-linecap="round" />
+    <path d="M -85 -60 C -105 50, -75 110, -45 130 L 45 130 C 75 110, 105 50, 85 -60 C 55 -80, -55 -80, -85 -60 Z" fill="#FFC72C" stroke="#E5A910" stroke-width="4" />
+    <ellipse cx="0" cy="110" rx="75" ry="26" fill="#FFB800" />
+  </g>
+
+  <!-- Midground Tables & White Chairs (Authentic Chaiwallaaa layout) -->
+  <!-- Midground Orange Table Group -->
+  <g id="midground-orange-table" transform="translate(1040, 780)">
+    <ellipse cx="0" cy="80" rx="140" ry="38" fill="url(#table-orange)" stroke="#FFA040" stroke-width="2" />
+    <!-- White chairs flanking -->
+    <path d="M -130 30 C -140 70, -110 100, -80 110 L -40 110 C -20 100, -10 60, -20 30 Z" fill="#EDEAE0" stroke="#D6D1C4" stroke-width="3" />
+    <path d="M 60 30 C 50 70, 80 100, 110 110 L 150 110 C 170 100, 180 60, 170 30 Z" fill="#EDEAE0" stroke="#D6D1C4" stroke-width="3" />
+  </g>
+
+  <!-- Midground Yellow Table Group (Right terrace) -->
+  <g id="midground-yellow-table" transform="translate(1360, 760)">
+    <ellipse cx="0" cy="70" rx="130" ry="35" fill="url(#table-yellow)" stroke="#FFE066" stroke-width="2" />
+    <!-- White molded chairs -->
+    <path d="M -110 30 C -120 70, -90 95, -60 105 L -30 105 Z" fill="#EDEAE0" />
+    <path d="M 50 30 C 40 70, 70 95, 100 105 L 130 105 Z" fill="#EDEAE0" />
+  </g>
+
+  <!-- ==================== 8. LUSH TROPICAL BANANA PALMS & GARDEN GROUND LIGHTING ==================== -->
+  <!-- Right Foreground Banana Palms with Broad Arching Fronds -->
+  <g id="banana-palms-right" transform="translate(1720, 780)">
+    <!-- Broad Green Palm Fronds overlapping -->
+    <path d="M 0 200 C -120 80, -280 40, -380 140 C -340 170, -220 160, 0 220 Z" fill="#2E7D32" stroke="#1B5E20" stroke-width="3" />
+    <path d="M 0 200 C -160 0, -320 -20, -420 60 C -380 90, -260 80, 0 220 Z" fill="#388E3C" />
+    <path d="M 0 200 C -80 -80, -220 -140, -320 -60 C -280 -30, -180 -10, 0 220 Z" fill="#43A047" />
+    <path d="M 0 200 C 60 -100, 140 -120, 220 -40 C 180 -10, 100 20, 0 220 Z" fill="#2E7D32" />
+
+    <!-- Warm garden uplighting beam on palms -->
+    <ellipse cx="-160" cy="230" rx="55" ry="18" fill="url(#bulb-glow)" />
+  </g>
+
+  <!-- Left Foreground Garden Foliage -->
+  <g id="foliage-left" transform="translate(0, 800)">
+    <path d="M 0 100 C 60 40, 120 30, 160 80 C 120 100, 60 110, 0 120 Z" fill="#2D7F36" />
+    <path d="M 0 160 C 80 120, 150 140, 200 200 C 140 210, 70 200, 0 190 Z" fill="#1B5E20" />
+  </g>
+
+  <!-- Soft Sunset Twilight Warmth Overlay -->
+  <rect width="1920" height="1280" fill="url(#bulb-glow)" opacity="0.12" style="mix-blend-mode: screen;" />
+</svg>
